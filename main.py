@@ -20,4 +20,4 @@ commit_count += 1
 with open('commit_count.txt', 'w') as f:
 	f.write(str(commit_count))
 
-print("executing: git push")
+os.system("git push")
