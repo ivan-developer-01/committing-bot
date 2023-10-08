@@ -20,8 +20,9 @@ commit_count += 1
 
 with open('commit_count.txt', 'w') as f:
 	f.write(str(commit_count))
-	os.system(f'git add .')
-	os.system(f'git commit -m "Auto-commit to update commit_count.txt at {time.strftime("%Y-%m-%d %H:%M:%S")}"')
-	time.sleep(0.5)
+
+os.system(f'git add .')
+os.system(f'git commit -m "Auto-commit to update commit_count.txt at {time.strftime("%Y-%m-%d %H:%M:%S")}"')
+time.sleep(0.5)
 
 os.system("git push")
